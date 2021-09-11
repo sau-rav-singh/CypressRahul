@@ -1,0 +1,13 @@
+{
+  "defaultCommandTimeout": 10000,
+  "testFiles": "**/*.feature",
+  "reporter": "mochawesome",
+  "env": {
+    "url": "https://rahulshettyacademy.com"
+  },  
+  "projectId": "fnixwn",
+  "retries": {
+    "runMode": 2,
+    "openMode": 0
+  }
+}

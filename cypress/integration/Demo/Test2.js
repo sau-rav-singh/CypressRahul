@@ -1,0 +1,21 @@
+/// <reference types="Cypress" />
+describe('My Second Test Suite', function() {
+
+    it('My Second Test Case', function() {
+      cy.visit("https://rahulshettyacademy.com/seleniumPractise/#/")
+      cy.get(".search-keyword").type('ca')
+      cy.wait(2000)
+      cy.get(".products").as('productLocator')
+      cy.get("@productLocator").find(".product").each(($el, index, $list) => {
+        const vegText=$el.find("h4[class='product-name']").text()
+        if(vegText.includes("Cashews")){
+           // $el.find('button').trigger("click");
+           cy.wrap($el).contains('ADD TO CART').click()
+              }
+      })
+      cy.get('.cart-icon > img').click()
+      cy.contains('PROCEED TO CHECKOUT').click()
+      cy.get(':nth-child(14)').click()
+    })
+
+})
