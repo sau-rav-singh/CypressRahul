@@ -4,6 +4,7 @@ import ProductPage from '../../../support/pageObjects/ProductPage'
 import { Given,When,Then, And } from "cypress-cucumber-preprocessor/steps";
 //npx cypress run --spec cypress\integration\BDD\*.feature --headed --browser chrome
 //npx cypress-tags run -e TAGS="@Smoke" --headed --browser chrome
+//Demo Comment
 const homePage=new HomePage()
 const productPage=new ProductPage()
 let name
