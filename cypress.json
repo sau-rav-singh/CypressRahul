@@ -1,6 +1,5 @@
 {
   "defaultCommandTimeout": 10000,
-  "testFiles": "**/*.feature",
   "reporter": "mochawesome",
   "env": {
     "url": "https://rahulshettyacademy.com"
